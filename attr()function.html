@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Attribute function</title>
+        <style>
+            body{
+                font: 19px/25px arial;padding: 10px 0 0 20px;
+            }
+            h1{font-size: 32px;margin-bottom: 35px;}
+            p{
+                font-size: 37px;
+                margin: 200px 0 0 50px;
+            }
+            p::after{
+                content: attr(class);
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Attribute function</h1>
+        <p class="test">Yahoo</p>
+    </body>
+</html>

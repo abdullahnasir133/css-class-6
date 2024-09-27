@@ -1,0 +1,38 @@
+<html>
+    <head>
+         <title>Counter Increament</title>
+         <style>
+            body{
+                font: 19px/25px arial;padding: 10px 0 0 20px;
+                counter-reset:my-counter 0;
+
+            }
+            
+            h1{font-size: 32px;margin-bottom: 35px;color: green;}
+            H2::before{
+                content: "chapter" counter(my-counter) " : ";
+                counter-increment: my-counter 1;
+                color: crimson;
+                /*counter is use to count the chapter number serial number and create loop*/
+            }
+
+         </style>
+    </head>
+    <body>
+        <h1>CSS counter Increament</h1>
+
+        <h2>Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, maxime. Qui deleniti consequuntur officia possimus aperiam aliquid maiores architecto maxime adipisci delectus obcaecati, iure, dolorem velit, corporis iste eveniet dignissimos?</p>
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae magnam praesentium commodi nobis molestiae minus quae provident maxime natus quia non cumque corporis soluta, facere error ea ab illo autem?
+        </p>
+
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam non quia distinctio sit. Quia laudantium, dicta eaque odit dolores repellendus magni labore consequatur, sit, nemo eos? Eligendi vero doloribus mollitia.
+        </p>
+
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, aperiam est. Numquam id labore laboriosam earum recusandae quibusdam libero delectus consectetur provident quidem et rem officia temporibus, ea quam vel.</p>
+    </body>
+</html>
